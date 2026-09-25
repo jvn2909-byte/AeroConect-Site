@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-label="AeroConect - drone agrícola sobre lavoura">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9d9dc"/><stop offset=".55" stop-color="#f2c77c"/><stop offset="1" stop-color="#6c8d43"/></linearGradient>
+ <linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c4b2b"/><stop offset=".5" stop-color="#16824b"/><stop offset="1" stop-color="#8dbd35"/></linearGradient>
+ <linearGradient id="drone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f8f7"/><stop offset="1" stop-color="#a9b5af"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity=".28"/></filter>
+</defs>
+<rect width="1000" height="700" rx="34" fill="url(#sky)"/>
+<path d="M0 355 Q180 250 350 340 T700 315 T1000 330 V700 H0Z" fill="#31552d" opacity=".75"/>
+<path d="M0 430 Q180 330 350 410 T700 390 T1000 410 V700 H0Z" fill="url(#field)"/>
+<g opacity=".5" stroke="#b6dc58" stroke-width="4">
+<path d="M0 700L300 405M120 700L360 405M250 700L430 405M380 700L500 405M620 700L550 405M760 700L620 405M900 700L700 405M1000 700L780 405"/>
+</g>
+<g filter="url(#shadow)" transform="translate(0,-10)">
+<path d="M330 280 L470 235 L610 280 L570 360 L370 360Z" fill="url(#drone)" stroke="#15231d" stroke-width="9"/>
+<path d="M365 305H575" stroke="#173127" stroke-width="16" stroke-linecap="round"/>
+<path d="M430 290h140" stroke="#27a956" stroke-width="9" stroke-linecap="round"/>
+<path d="M350 290L180 225M650 290L820 225M360 335L170 380M640 335L830 380" stroke="#17241f" stroke-width="16" stroke-linecap="round"/>
+<g fill="#1a2922" stroke="#eef4ef" stroke-width="4">
+<ellipse cx="165" cy="220" rx="80" ry="10"/><ellipse cx="835" cy="220" rx="80" ry="10"/>
+<ellipse cx="155" cy="385" rx="80" ry="10"/><ellipse cx="845" cy="385" rx="80" ry="10"/>
+</g>
+<g fill="#26362e">
+<rect x="145" y="220" width="40" height="52" rx="10"/><rect x="815" y="220" width="40" height="52" rx="10"/>
+<rect x="135" y="360" width="40" height="52" rx="10"/><rect x="825" y="360" width="40" height="52" rx="10"/>
+</g>
+<path d="M470 350h60v100h-60z" fill="#cbd4cf" stroke="#15231d" stroke-width="7"/>
+<path d="M485 438h30v38h-30z" fill="#15231d"/>
+<circle cx="500" cy="437" r="13" fill="#42e51e"/>
+</g>
+<g transform="translate(52 54)">
+<text x="0" y="0" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="54" font-weight="900" font-style="italic" fill="#06271a">Aero</text>
+<text x="150" y="0" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="54" font-weight="900" font-style="italic" fill="#a85b2b">Conect</text>
+<path d="M-5 58L55 28L37 72L93 48L67 87L0 87Z" fill="#19a957"/>
+</g>
+<rect x="48" y="600" width="904" height="58" rx="29" fill="#06271a" opacity=".82"/>
+<text x="500" y="638" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#fff">GESTÃO PROFISSIONAL DE OPERAÇÕES COM DRONES</text>
+</svg>
