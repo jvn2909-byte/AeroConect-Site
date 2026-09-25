@@ -1,6 +1,6 @@
 const SUPABASE_URL="https://wzxhuqhazlihxewbutxu.supabase.co";
 const SUPABASE_KEY="sb_publishable_uNKr4_9U5ruGll27VaZ-0A_LGBF0-EO";
-const EMAIL_REDIRECT_URL="https://jvn2909-byte.github.io/AeroConect-Site/";
+const EMAIL_REDIRECT_URL="aeroconect://auth/confirm";
 
 function showSignup(){
   const form=document.getElementById("signup-form");
