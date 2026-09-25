@@ -68,17 +68,14 @@ form?.addEventListener("submit",async e=>{
       );
     }
 
-    // Com confirmações de e-mail ativadas, o Supabase normalmente
-    // retorna um usuário, mas não uma sessão. Só consideramos sucesso
-    // quando o Auth realmente devolveu um ID de usuário.
-    if(!data?.user?.id){
-      throw new Error("O cadastro não foi confirmado pelo servidor. Nenhuma conta foi criada. Tente novamente.");
-    }
-
+    // Com a confirmação de e-mail ativada, o Supabase pode criar
+    // o usuário e, dependendo da resposta do Auth, não devolver
+    // um objeto user completo. HTTP 2xx significa que o cadastro
+    // foi aceito; o usuário deve confirmar o e-mail antes de entrar.
     message.className="form-message success";
     message.textContent=data?.session
       ?"Conta criada! Você já pode usar o AeroConect."
-      :"Conta criada com sucesso! Verifique seu e-mail (inclusive Spam) para confirmar a conta e depois entre no AeroConect.";
+      :"Cadastro recebido com sucesso! Verifique seu e-mail (inclusive Spam) para confirmar a conta e depois entre no AeroConect.";
 
     form.reset();
   }catch(err){
