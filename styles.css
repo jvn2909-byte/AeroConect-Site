@@ -180,3 +180,31 @@ body::before{filter:saturate(1.8) contrast(1.16) brightness(1.04)!important}
   body::before{filter:saturate(1.9) contrast(1.18) brightness(1.05)!important}
   .hero{background:rgba(247,250,248,.22)!important}
 }
+
+
+/* Legibilidade mobile: textos do hero com contraste alto sobre a arte */
+.hero .lead{
+  color:#17271f!important;
+  font-weight:500;
+  background:rgba(247,250,248,.91);
+  padding:12px 14px;
+  border:1px solid rgba(220,231,225,.9);
+  border-radius:14px;
+  box-shadow:0 4px 18px rgba(16,32,25,.07);
+  -webkit-backdrop-filter:blur(5px);
+  backdrop-filter:blur(5px);
+}
+.hero .micro{
+  color:#24372d!important;
+  font-weight:600;
+  background:rgba(247,250,248,.93);
+  padding:9px 12px;
+  border-radius:10px;
+  display:inline-block;
+  max-width:100%;
+  box-shadow:0 3px 12px rgba(16,32,25,.05);
+}
+@media(max-width:800px){
+  .hero .lead{font-size:18px;line-height:1.55}
+  .hero .micro{font-size:12px;line-height:1.55}
+}
