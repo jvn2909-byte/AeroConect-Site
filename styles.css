@@ -141,3 +141,16 @@ body::before{
     background-position:center 35% !important;
   }
 }
+
+
+/* Ajuste adicional: mostrar a arte inteira e reduzir o zoom no fundo */
+body::before{
+  background-size: auto 100% !important;
+  background-position: center center !important;
+}
+@media(max-width:800px){
+  body::before{
+    background-size: 100% auto !important;
+    background-position: center top !important;
+  }
+}
