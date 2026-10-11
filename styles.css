@@ -115,3 +115,13 @@ body::before{
     background-position:center center;
   }
 }
+
+
+/* Marca em destaque: ampliar a arte de fundo no celular para o nome AeroConect ocupar a largura visível */
+@media(max-width:800px){
+  body::before{
+    background-size:auto 125svh !important;
+    background-position:center 58% !important;
+    background-repeat:no-repeat !important;
+  }
+}
