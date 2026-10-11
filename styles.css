@@ -24,26 +24,35 @@
 .phone-caption{position:absolute;z-index:2;bottom:22px;left:22px;right:22px;display:flex;align-items:center;gap:10px;padding:13px 15px;border:1px solid rgba(255,255,255,.85);border-radius:16px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);box-shadow:0 10px 28px rgba(16,32,25,.08)}.caption-check{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:#e0f6e8;color:#087443;font-weight:900}.phone-caption strong,.phone-caption small{display:block}.phone-caption strong{font-size:12px}.phone-caption small{font-size:10px;color:#64736c;margin-top:2px}
 @media(max-width:800px){.phone-stage{min-height:555px;padding-top:24px}.phone-mockup{width:270px}.phone-screen{min-height:470px}.phone-caption{left:14px;right:14px;bottom:14px}}
 @media(max-width:520px){.phone-stage{min-height:535px;padding:18px 14px 82px;border-radius:22px}.phone-mockup{width:250px;padding:8px;border-radius:34px}.phone-screen{min-height:445px;border-radius:27px}.phone-welcome{padding-top:13px}.phone-shortcuts>div{padding:7px 1px}.phone-caption{padding:11px 12px}.phone-caption strong{font-size:11px}.phone-caption small{font-size:9px}}
-/* Fundo oficial do AeroConect */
+/* Fundo oficial do AeroConect: fixo, sem repetir e com a marca inteira visível */
 .hero {
-  background:
+  background-color: #f7faf8;
+  background-image:
     linear-gradient(
       90deg,
-      rgba(247, 250, 248, 0.94) 0%,
-      rgba(247, 250, 248, 0.78) 48%,
-      rgba(247, 250, 248, 0.38) 100%
+      rgba(247, 250, 248, 0.90) 0%,
+      rgba(247, 250, 248, 0.68) 48%,
+      rgba(247, 250, 248, 0.30) 100%
     ),
-    url("aeroconect-fundo.jpg") center center / cover no-repeat;
+    url("aeroconect-fundo.jpg");
+  background-position: center, center right;
+  background-size: cover, auto 78%;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, fixed;
 }
 
 @media (max-width: 800px) {
   .hero {
-    background:
+    background-image:
       linear-gradient(
         180deg,
-        rgba(247, 250, 248, 0.90),
-        rgba(247, 250, 248, 0.62)
+        rgba(247, 250, 248, 0.84),
+        rgba(247, 250, 248, 0.48)
       ),
-      url("aeroconect-fundo.jpg") center center / cover no-repeat;
+      url("aeroconect-fundo.jpg");
+    background-position: center, center center;
+    background-size: cover, auto 54%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, fixed;
   }
 }
