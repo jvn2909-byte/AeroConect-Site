@@ -154,3 +154,13 @@ body::before{
     background-position: center top !important;
   }
 }
+
+
+/* Ajuste pela captura real: reduzir a escala da arte para o logotipo inteiro caber na tela */
+@media(max-width:800px){
+  body::before{
+    background-size:auto 62svh !important;
+    background-position:center 42% !important;
+    background-repeat:no-repeat !important;
+  }
+}
