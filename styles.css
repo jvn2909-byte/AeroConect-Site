@@ -91,3 +91,27 @@ body::before{
     letter-spacing:1.3px;
   }
 }
+
+
+/* Ajuste definitivo: arte ocupa a tela do celular inteira, sem reduzir a marca */
+body::before{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100vh;
+  height:100svh;
+  min-height:0;
+  z-index:-1;
+  background-image:url("aeroconect-fundo.jpg");
+  background-size:100vw 100svh;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  filter:saturate(1.4) contrast(1.06);
+}
+@media(max-width:800px){
+  body::before{
+    background-size:100vw 100svh;
+    background-position:center center;
+  }
+}
