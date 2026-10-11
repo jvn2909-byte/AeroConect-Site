@@ -125,3 +125,19 @@ body::before{
     background-repeat:no-repeat !important;
   }
 }
+
+
+/* Enquadramento final no celular: a arte ocupa toda a largura, sem ampliar e cortar o nome */
+body::before{
+  background-size:100% auto !important;
+  background-position:center 35% !important;
+  background-repeat:no-repeat !important;
+  background-attachment:fixed !important;
+  filter:saturate(1.5) contrast(1.08) !important;
+}
+@media(max-width:800px){
+  body::before{
+    background-size:100% auto !important;
+    background-position:center 35% !important;
+  }
+}
