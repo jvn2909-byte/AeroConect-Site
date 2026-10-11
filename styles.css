@@ -8,3 +8,8 @@
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-color:#eaf5ee;background-image:url("aeroconect-fundo.jpg");background-position:center center;background-size:contain;background-repeat:no-repeat;filter:saturate(1.35) contrast(1.08)}
 .hero{background:transparent}
 @media(max-width:800px){body::before{background-size:auto 78vh;background-position:center center} .section{background:rgba(247,250,248,.72)}}
+
+
+/* Ajuste fino: manter a imagem de fundo estável durante a rolagem no celular */
+body::before{height:100svh;min-height:100svh;background-position:center center;transform:translateZ(0);will-change:transform}
+@media(max-width:800px){body::before{height:100svh;min-height:100svh;background-size:auto 78svh;background-position:center center}}
