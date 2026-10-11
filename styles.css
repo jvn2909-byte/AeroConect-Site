@@ -22,3 +22,43 @@ body::before{background-attachment:fixed;background-size:contain;background-posi
   .hero{background:rgba(247,250,248,.18);}
   .hero h1,.hero .lead,.hero .eyebrow,.hero .micro,.hero .ghost{ text-shadow:0 1px 5px rgba(247,250,248,.85); }
 }
+
+
+/* Correção mobile: fundo fixo ocupando a tela sem ampliar/cortar a marca */
+body::before{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100vh;
+  height:100svh;
+  min-height:0;
+  z-index:-1;
+  transform:none;
+  background-image:url("aeroconect-fundo.jpg");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  filter:saturate(1.45) contrast(1.08);
+}
+.top{background:rgba(247,250,248,.97)}
+.hero{
+  background:rgba(247,250,248,.80);
+}
+.section,.steps,.download,.plans,.cta{
+  background-color:rgba(247,250,248,.78);
+}
+@media(max-width:800px){
+  body::before{
+    background-size:100% 100svh;
+    background-position:center center;
+  }
+  .hero{
+    padding-top:32px;
+    padding-bottom:48px;
+    background:rgba(247,250,248,.82);
+  }
+  .hero-grid{gap:26px}
+  .hero h1,.hero .lead,.hero .eyebrow,.hero .micro,.hero .ghost{text-shadow:none}
+  .hero-visual{background:rgba(255,255,255,.94)}
+  .section,.steps,.download,.plans,.cta{background-color:rgba(247,250,248,.84)}
+}
