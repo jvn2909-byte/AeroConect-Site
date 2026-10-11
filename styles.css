@@ -62,3 +62,32 @@ body::before{
   .hero-visual{background:rgba(255,255,255,.94)}
   .section,.steps,.download,.plans,.cta{background-color:rgba(247,250,248,.84)}
 }
+
+
+/* Proporção correta da arte: não esticar o nome AeroConect no celular */
+body::before{
+  background-color:#eaf5ee;
+  background-size:100% auto;
+  background-position:center top;
+  background-repeat:no-repeat;
+}
+@media(max-width:800px){
+  body::before{
+    background-size:100% auto;
+    background-position:center top;
+  }
+  .hero{
+    padding-top:42px;
+    background:rgba(247,250,248,.56);
+  }
+  .hero h1{
+    font-size:clamp(38px, 10vw, 52px);
+    line-height:1.04;
+    letter-spacing:-1.8px;
+  }
+  .hero .eyebrow{
+    margin-top:0;
+    font-size:11px;
+    letter-spacing:1.3px;
+  }
+}
