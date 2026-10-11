@@ -208,3 +208,10 @@ body::before{filter:saturate(1.8) contrast(1.16) brightness(1.04)!important}
   .hero .lead{font-size:18px;line-height:1.55}
   .hero .micro{font-size:12px;line-height:1.55}
 }
+
+/* Contraste e leitura: cards e descrição legíveis sobre a arte de fundo */
+.feature-disclaimer{margin:24px 0 0;padding:15px 18px;border-radius:12px;border:1px solid #cbded2;background:rgba(255,255,255,.96);color:#26382e;font-size:13px;line-height:1.65}
+#recursos .section-title p{color:#26382e;background:rgba(255,255,255,.94);padding:12px 15px;border-radius:12px;display:inline-block}
+#recursos .cards article{background:rgba(255,255,255,.97);box-shadow:0 8px 24px rgba(16,32,25,.06)}
+#recursos .cards p{color:#34473c;line-height:1.65}
+#recursos .cards h3{color:#102019}
